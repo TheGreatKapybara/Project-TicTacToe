@@ -1,0 +1,58 @@
+.gameField {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.playerScreen {
+    position: relative;
+    left: -2px;
+    bottom: -2px;
+    background-color: #11dd55;
+    width: 300px;
+    height: 46px;
+    margin-left: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.board {
+    width: 300px;
+    border: 2px solid black;
+    position: relative;
+    top: 50px;
+    left: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.point {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.point:hover {
+    background-color: white;
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+}
+
+.cross {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='100' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z' fill='%23ff0000'%3e%3c/path%3e%3c/svg%3e");
+    background-position: center;
+}
+
+.circle {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mandatory_road_sign_-_Type_B.svg/800px-Mandatory_road_sign_-_Type_B.svg.png");
+    background-size: 80%;
+    background-repeat: space;
+    background-position: center;
+}
